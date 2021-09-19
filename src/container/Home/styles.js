@@ -53,6 +53,42 @@ export const SearchBarContainer = styled.form`
         }
     }
 `;
+export const SuggestionsContainer = styled.div`
+    display: ${(props) => (props.active ? 'flex' : 'none')};
+    align-items: center;
+    font-weight: 400;
+
+    span{
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    h5{
+        cursor: pointer;
+        font-weight: 400;
+
+        :hover{
+            filter: brightness(0.5);
+        }
+    }
+
+    span, h5 {
+        color: grey;
+        margin-right: 5px;
+    }
+    
+`;
 export const ProductContainer = styled.ul`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    li{
+        margin: 10px;
+    }
+
+    h4{
+        text-align: justify;
+    }
 
 `;
